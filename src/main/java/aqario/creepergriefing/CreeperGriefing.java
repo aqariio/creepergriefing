@@ -15,7 +15,7 @@ public class CreeperGriefing implements ModInitializer {
 
 	@Override
 	public void onInitialize(ModContainer mod) {
-		LOGGER.info("Loading {}!", mod.metadata().name());
+		LOGGER.info("Loading {}", mod.metadata().name());
 
 		DO_CREEPER_GRIEFING = GameRuleRegistry.register("creeperGriefing",
 			GameRules.Category.MOBS, GameRuleFactory.createBooleanRule(true));
